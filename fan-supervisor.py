@@ -22,8 +22,6 @@ class FanSupervisor:
     tempLow = 0.0  # calculate fan speed when temp is lower than
 
     def __init__(self) -> None:
-        self.initLoggers()
-
         # setup
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
